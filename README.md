@@ -1,2 +1,2 @@
-# EJERCICIIOS_JAVA
+# EJERCICIOS_JAVA
 Aqui iran los ejercicios que haga en programacion c java
