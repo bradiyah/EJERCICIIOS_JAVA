@@ -47,18 +47,17 @@ public class Main {
         }
 
 
-
         //Ej.5: Entrada a un concierto:
 
         System.out.println("Ingrese la edad");
 
         int age = sc.nextInt();
 
-        if (age < 12 ){
+        if (age < 12) {
             System.out.println("No puede entrar");
         } else if (age <= 17) {
             System.out.println("Necesita adulto");
-            
+
         } else {
             System.out.println("Puede entrar solo");
         }
@@ -69,13 +68,56 @@ public class Main {
         System.out.println("Hay un semaforo de color...?");
         String Semaforo = sc.next();
 
-        if ( Semaforo.equalsIgnoreCase("rojo")){
+        if (Semaforo.equalsIgnoreCase("rojo")) {
             System.out.println("Detente");
         } else if (Semaforo.equalsIgnoreCase("ambar")) {
             System.out.println("Precaucion");
         } else if (Semaforo.equalsIgnoreCase("verde")) {
             System.out.println("puede avanzar");
         }
+
+
+        // Ejercicios por mi cuenta:
+        //1-Numero positivo o negativo:
+        System.out.println("Introduce un numero");
+        int num = sc.nextInt();
+
+        if (num < 0) {
+            System.out.println("El numero " + num + "es negativo");
+        } else if (num >= 0) {
+            System.out.println("El numero" + num + "es positivo o 0");
+
+        }
+
+        //Ej. par o impar:
+        System.out.println("Introduce un numero");
+        int number = sc.nextInt();
+
+        if (number % 2 == 0) {
+            System.out.println("El numero es par");
+        } else {
+            System.out.println("El numero es impar");
+
+        }
+    }
+
+        //Ej.aprobado o suspenso:
+
+        double nota = -1;
+
+        System.out.print("Introduce la nota: ");
+        String entrada = sc.nextLine();
+        entrada = entrada.replace("," , ".");
+
+
+         nota = sc.nextDouble();
+
+        if (nota >= 5){
+            System.out.println("Ha aprobado");
+        } else {
+            System.out.println("suspenso");
+        }
+
         sc.close ();
 
 
