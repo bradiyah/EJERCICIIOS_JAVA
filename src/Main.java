@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingresa una temperatura en Cº");
+       /** System.out.println("Ingresa una temperatura en Cº");
         if (sc.hasNextInt()) { // se valida que la entrada sea un numero
             int grados = sc.nextInt();
 
@@ -171,10 +171,20 @@ public class Main {
 
             }
 
+        **/
+
+
+            //EJERCICIOS BUCLES (LOOPS):
+          //Ej.1: Contando simple (for):
+
+
+
+
+
             sc.close();
         }
     }
-}
+
 
 
 
