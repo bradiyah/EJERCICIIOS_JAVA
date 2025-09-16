@@ -250,7 +250,7 @@ public class Main {
       }
       System.out.println("El numero correcto es...."+ num_secreto);
 
-     **///Ej.7: Menu repetitivo (do-while)
+     //Ej.7: Menu repetitivo (do-while)
       int option;
       do {
         System.out.println("\n --- MENU ---");
@@ -328,8 +328,30 @@ public class Main {
         if ( i % 2 != 0 ){
           System.out.println(i);
         }
-      }
+     }
 
+      System.out.println("------");
+
+
+      **/// EJERCICIOS BUCLES TOP:
+      // EJ.1: CALCULADORA DE INTERES COMPUESTO (for):
+
+      System.out.println("Indique cantidad de dinero: ");
+      double cantidad = sc.nextDouble();
+
+      System.out.println("Indique tasa de interes anual: ");
+      double tasa_interes_anual = sc.nextDouble();
+
+      System.out.println("Numero de ños que mantendra la inversion: ");
+      int num_years_inversion = sc.nextInt();
+
+      for (int i = 1; i <= num_years_inversion; i++){
+         double interes = cantidad * (tasa_interes_anual/ 100);
+         cantidad+= interes;
+        System.out.printf("Año %d: saldo = %.2f €%n", i, cantidad);
+
+      }
+     ;
       sc.close();
     }
 }
