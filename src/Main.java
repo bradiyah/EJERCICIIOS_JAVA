@@ -351,6 +351,28 @@ public class Main {
         System.out.printf("Año %d: saldo = %.2f €%n", i, cantidad);
 
       }
+
+
+      //EJ.2: CAJERO AUTOMATICO:
+        System.out.println("Ingrese cantidad");
+        double saldo =sc.nextDouble();
+        boolean Seguir = true;
+
+        while (saldo > 0 && Seguir){
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
      ;
       sc.close();
     }
