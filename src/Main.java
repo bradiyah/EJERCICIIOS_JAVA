@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -171,19 +172,171 @@ public class Main {
 
             }
 
-        **/
+
 
 
             //EJERCICIOS BUCLES (LOOPS):
           //Ej.1: Contando simple (for):
 
+      System.out.println("Esto es un cuenteo, ingrese numero");
+          int N = sc.nextInt();
+
+          for (int i = 1 ; i <= N; i++  ){
+            System.out.println(i);
+          }
+      System.out.println("-----------");
+
+          //Ej.2: Cuenta regresiva (for):
+      System.out.println("Cuenta regresiva, ingrese numero");
+
+          int N2 = sc.nextInt();
+
+          for (int i = N2; i>=1; i-- ){
+            System.out.println(i);
+          }
+
+      System.out.println("-----------");
 
 
+          // Ej.3: Tabla multiplicar (for):
+
+      System.out.println("Esto sera una tabla de multiplicar, ingresa cualquier num");
+
+          int n = sc.nextInt();
+
+          for (int i = 1; i <=10; i++){
+            int resultado = n* i;
+            System.out.println(n + "x"+ i + "="+ resultado);
+          }
+      System.out.println("------");
+
+          //Ej.4: Sumatoria (for):
+           System.out.println("Sumatoria, ingrese num");
+          int N3 = sc.nextInt();
+          for(int i= 1; i <=N3; i++){
+            int answer = N3 + i;
+            System.out.println(N3 + "+" + i + "=" + answer);
+          }
+          System.out.println("------");
+
+         //Ej.5: Numeros pares (while):
+
+           System.out.println("Numeros pares, ingrese un numero N");
+          int N4 = sc.nextInt();
+
+           int i = 2;
+
+         while ( i <= N4 ){
+        System.out.println(i);
+        i+=2;
+         }
+
+        System.out.println("---------");
+
+      //Ej.6: Adivinar numero (while):
+
+      int  num_secreto;
+      int intento;
+
+      System.out.println("Ingresa numero secreto");
+      num_secreto = sc.nextInt();
+
+      System.out.println("Ahora adivina el numero");
+      intento = sc.nextInt();
+
+      while( intento != num_secreto){
+        System.out.println("Numero incorrecto, pruebe de nuevo");
+        intento = sc.nextInt();
+      }
+      System.out.println("El numero correcto es...."+ num_secreto);
+
+     **///Ej.7: Menu repetitivo (do-while)
+      int option;
+      do {
+        System.out.println("\n --- MENU ---");
+        System.out.println("1 - Home");
+        System.out.println("2 - What we do");
+        System.out.println("3 - Contact us");
+        System.out.println("0 - Exit");
 
 
-            sc.close();
+        option = sc.nextInt();
+
+        switch (option) {
+          case 0:
+            System.out.println("Adiós");
+            break;
+          case 1:
+            System.out.println("Menu principal, inicio");
+            break;
+          case 2:
+            System.out.println("Que hacemos?");
+            break;
+          case 3:
+            System.out.println("Nuestro contacto");
+            break;
+          default:
+            System.out.println("Eliga una opcion");
         }
+
+
+      }  while (option != 0) ;
+
+      System.out.println("-------------");
+
+      //Ej.8: Suma hasta 0 (do-while):
+      int numero;
+      int suma = 0;
+
+      do {
+        System.out.println("Ingresa num (o  0 para irse )");
+        numero = sc.nextInt();
+        suma+= numero;
+      } while (numero != 0);
+
+      System.out.println("La suma total es: " + " " +  suma);
+
+      System.out.println("------------");
+
+
+
+      // Ej.9: Validar contraseña (while):
+
+      sc.nextLine();
+      final String CONTRASENHA_CORRECTA = "java123"; // la clave "secreta"
+
+      String entrada;
+      do {
+        System.out.print("Introduce la contraseña: ");
+        entrada = sc.nextLine();
+        if (!entrada.equals(CONTRASENHA_CORRECTA)) {
+          System.out.println("Contraseña incorrecta, inténtalo de nuevo.");
+        }
+      } while (!entrada.equals(CONTRASENHA_CORRECTA));
+      System.out.println("¡Acceso concedido!");
+
+      System.out.println("-----------");
+
+
+      // Ej.10: Numeros impares (for):
+      System.out.println("Ingrese un numero par: ");
+      int nImPar = sc.nextInt();
+
+      System.out.println("Numeros impares del 1 al " + nImPar + ":" );
+
+      for ( int i = 1; i <= nImPar ; i++){
+        if ( i % 2 != 0 ){
+          System.out.println(i);
+        }
+      }
+
+      sc.close();
     }
+}
+
+
+
+
 
 
 
